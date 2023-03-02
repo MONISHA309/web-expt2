@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 4100px;
+            display: flex;
+            flex-direction: column;
+            /* border: 3px solid black; */
+        }
+        .one{
+            display: flex;
+            flex-direction: row;
+            height: 80px;
+            /* border: 3px solid black; */
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+        .inner-one{
+            width: 70%;
+            /* border: 3px solid black; */
+            font-size: 20px;
+        }
+        .inner-one1{
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            /* border: 3px solid black; */
+        }
+        .inner-one2{
+            width: 33%;
+            /* border: 3px solid black; */
+        }
+        .inner-one3{
+            width: 33%;
+            /* border: 3px solid black; */
+        }
+        .inner-one4{
+            width: 33%;
+            /* border: 3px solid black; */
+        }
+        .two{
+            height: 100px;
+            /* border: 3px solid black; */
+            display: flex;
+            flex-direction: row;
+            margin-left: 180px;
+        }
+        .inner-two1{
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            /* border: 3px solid black; */
+        }
+        .inner-two2{
+            width: 25%;
+            /* border: 3px solid black; */
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        /* .inner-two2-one{
+            height: 50px;
+        }
+        .inner-two2-two{
+            height: 50px;
+        } */
+        .inner-two3{
+            width: 25%;
+            margin-top: 30px;
+            font-size: 20px;
+            /* border: 3px solid black; */
+        }
+        .inner-two4{
+            width: 25%;
+            /* border: 3px solid black; */
+        }
+        button{
+            border: none;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(249, 205, 6);
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #000000;
+            color: #ffffff;
+        }
+        button:active{
+            background-color: grey;
+            color: white;
+        }
+        .hr{
+            border: 1px solid rgb(188, 187, 187);
+
+        }
+        .three{
+            position: sticky;
+            position: -webkit-sticky;
+            top:0;
+            padding: 20px;
+            background-color: rgb(239, 235, 235);
+            margin: 20px;
+        }
+
+        .inner-three{
+            display: grid;
+            /* border: 3px solid black; */
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+            margin-left: 70px;
+            font-size: 20px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: white;
+            background-color: rgb(249, 205, 6);
+            padding: 10px;
+        }
+        a:active{
+            color: white;
+            background-color: grey;
+            padding: 10px;
+        }
+        /* .bgimg{
+            background-image: url(./image/img4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+            background-position: top;
+        } */
+        .bgimg{
+            background-image: url(./image/img4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #ffffff;
+            opacity: 0.6;
+        }
+        .bgimg > p{
+            font-weight: bold;
+            color: #000000;
+            font-size: large;
+        }
+        .five{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 800px;
+            
+        }
+        .inner-five1{
+            width: 35%;
+            background-image: url(./image/img4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            margin: 50px 300px 50px 100px;
+            /* border: 3px solid black; */
+        }
+        .inner-five2{
+            width: 35%;
+            background-color:rgb(200, 240, 200);
+            margin: 150px 500px 200px -450px;
+            /* border: 3px solid black; */
+            padding: 40px 10px;
+            justify-content: center;
+            text-align: center;
+        }
+        .six{
+            display: flex;
+            flex-direction: column;
+            height: 800px;
+            background-color: rgb(223, 222, 222);
+            /* font-size: 20px; */
+        }
+        .inner-six1{
+            height: 200px;
+            /* border: 3px solid black; */
+        }
+        .inner-six2{
+            height: 400px;
+            /* border: 3px solid black; */
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .inner-six21{
+            width: 25%;
+            /* border: 3px solid black; */
+            margin: 50px;
+            background-image: url(./image/display\ repair.jpg);
+            background-position: center;
+            background-size: cover;
+            background-color: black;
+            opacity: 0.7;
+        }
+        .inner-six22{
+            width: 25%;
+            /* border: 3px solid black; */
+            margin: 50px;
+            background-image: url(./image/processor\ fix.jpg);
+            background-position: center;
+            background-size: cover;
+            background-color: black;
+            opacity: 0.7;
+        }
+        .inner-six23{
+            width: 25%;
+            /* border: 3px solid black; */
+            margin: 50px;
+            background-image: url(./image/hdd\ repair.jpg);
+            background-position: center;
+            background-size: cover;
+            background-color: black;
+            opacity: 0.7;
+        }
+        .inner-six24{
+            width: 25%;
+            /* border: 3px solid black; */
+            margin: 50px;
+            background-image: url(./image/ram\ upgrade.jpg);
+            background-position: center;
+            background-size: cover;
+            background-color: black;
+            opacity: 0.7;
+        }
+        .inner-six3{
+            height: 150px;
+            /* border: 3px solid black; */
+        }
+        .seven{
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+            /* border: 3px solid black; */
+        }
+        .inner-seven1{
+            width: 30%;
+            margin: 0px;
+            /* border: 3px solid black; */
+            /* padding-top: 10px; */
+            font-size: 35px;
+        }
+        .inner-seven2{
+            width: 15%;
+            margin: 50px;
+            border: 3px solid rgb(249, 205, 6);
+
+        }
+        .inner-seven3{
+            width: 15%;
+            margin: 50px;
+            border: 3px solid rgb(249, 205, 6);
+
+        }
+        .inner-seven4{
+            width: 15%;
+            margin: 50px;
+            border: 3px solid rgb(249, 205, 6);
+
+        }
+        .inner-seven5{
+            width: 15%;
+            margin: 50px;
+            border: 3px solid rgb(249, 205, 6);
+
+        }
+        .nine{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 500px;
+            background-image: url(./image/footer.jpg);
+            background-position: center;
+            background-size: cover;
+            
+            
+        }
+        .inner-nine1{
+            width: 50%;
+            border: 3px solid black;
+            margin: 50px;
+            padding: 50px;
+            background-color: #ffffff;
+            opacity: 0.6;
+            
+        }
+        .inner-nine1 p{
+            font-weight: bold;
+            color: #000000;
+            font-size: large;
+        }
+        .inner-nine2{
+            width: 50%;
+            border: 3px solid black;
+            margin: 50px;
+            padding: 50px;
+        }
+       
+        </style>
+</head>
+<body>
+
+
+    <div class="container">
+<!-- division 1 -->
+<!-- hot line -->
+        <div class="one">
+            <div class="inner-one"><h3>HOT LINE : +880-1911-623-458, +8801-717-682-743</h3></div>
+            <div class="inner-one1">
+                <div class="inner-one2"><a href="" style="font-size: 25px;">Rewies</a></div>
+                <div class="inner-one3"><a href=""style="font-size: 25px;" >Warranty</a></div>
+                <div class="inner-one4"><a href="" style="font-size: 25px;">Contact</a></div>
+            </div>
+        </div>
+
+        <div class="hr" style="margin: 20px; margin-top: 5px;"></div>
+
+<!-- division 2 -->
+<!-- heading -->
+        <div class="two">
+<!-- img heading -->
+            <div class="inner-two1">
+                <img src="./image/img1.jpg" alt="" width="100px" height="90px" style="padding-left:20px">
+                <h2 style="padding-top: 20px;">company name</h2>
+                
+            </div>
+<!-- address -->
+            <div class="div-two">
+                <img src="./image/img2.jpg" alt="" width="80px" height="80px" style="padding: 10px">
+            </div>
+            <div class="inner-two2">
+                <div class="inner-two2-one" style="font-weight: bolder;">
+                    
+                    OFFICE ADDRESS</div>
+                <div class="inner-two2-two">Chennai</div>
+            </div>
+<!-- working hour -->
+            <div class="div-three">
+                <img src="./image/img3.jpg" alt="" width="80px" height="80px" style="padding: 10px">
+            </div>
+            <div class="inner-two3">
+                <div class="inner-two3-one" style="font-weight: bolder;">WORKING HOUR</div>
+                <div class="inner-two3-two">Monday-Friday 9:00-18:00</div>
+            </div>
+<!-- button -->
+            <div class="inner-two4">
+                <button>BOOK APPOINTMENT</button>
+            </div>
+        </div>
+
+
+        <div class="hr" style="margin: 20px;"></div>
+
+
+<!-- division 3 -->
+        <div class="three">
+            <div class="inner-three">
+                <!-- <div class="inner-three1"></div> -->
+                <div class="inner-three2"><a href="">HOME</a></div>
+                <div class="inner-three3"><a href="">ABOUT US</a></div>
+                <div class="inner-three4"><a href="page2.html">SERVICES</a></div>
+                <div class="inner-three5"><a href="BLOG.html">PAGES</a></div>
+                <div class="inner-three6"><a href="process.html">ELEMENTS</a></div>
+                <div class="inner-three7"><a href="">CONTACT</a></div>
+                <div class="inner-three8"></div>
+                <div class="inner-three9"></div>
+                <div class="inner-three10"></div>
+            </div>
+        </div>
+        <div class="hr" style="margin: 20px;"></div>
+
+
+
+
+<!-- division 4 image -->
+        <div class="bgimg" align="center">
+            <p style="padding:150px; font-size:50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero saepe earum a ut voluptate cum quidem enim iure dolores at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, perferendis? </p>
+            <button>GET STARTED NOW</button>
+        </div>
+    
+<br><br><br><br><br><br>
+
+
+<!-- division 5 -->
+        <div class="five">
+            <div class="inner-five1"></div>
+            <div class="inner-five2">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos iusto dolorem! Odit, expedita. Consectetur et aut placeat molestiae fugit!</p>
+                <button>learn more</button>
+            </div>
+        </div>
+<br><br><br><br>
+
+<!-- division 6 -->
+        <div class="six">
+            <div class="inner-six1" align="center" style="padding-top: 90px; padding-bottom: 10px; font-size: x-large;">
+                <h1>Our Service</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, non!</p>
+            </div>
+            <div class="inner-six2">
+                <div class="inner-six21">
+                    <h3 style="padding: 120px;color: white; ">DISPLAY REPAIR</h3>
+                </div>
+                <div class="inner-six22">
+                    <h3 style="padding: 120px;color: white; ">DISPLAY REPAIR</h3>
+                </div>
+                <div class="inner-six23">
+                    <h3 style="padding: 120px;color: white; ">DISPLAY REPAIR</h3>
+                </div>
+                <div class="inner-six24"><h3 style="padding: 120px;color: white; ">DISPLAY REPAIR</h3>
+
+                </div>
+            </div>
+            <div class="inner-six3" align="center">
+                <button >LOAD MORE SERVICE</button>
+            </div>
+        </div>
+<br><br><br><br>
+
+<!-- division 7 -->
+        <div class="seven">
+            <div class="inner-seven1" align="center">
+                <h1>REPAIR BRANDS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="inner-seven2">
+                <img src="./image/repair logo.jpg" alt="" width="70%" style="padding-left: 40px; padding-top:50px">
+            </div>
+            <div class="inner-seven3">
+                <img src="./image/repair logo.jpg" alt="" width="70%" style="padding-left: 40px; padding-top:50px">
+            </div>
+            <div class="inner-seven4">
+                <img src="./image/repair logo.jpg" alt="" width="70%" style="padding-left: 40px; padding-top:50px">
+            </div>
+            <div class="inner-seven5">
+                <img src="./image/repair logo.jpg" alt="" width="70%" style="padding-left: 40px; padding-top:50px">
+            </div>
+        </div>
+<br><br><br><br>
+
+<!-- division 8 -->
+        <div class="eight" align="center" style="background-color: rgb(249, 205, 6); padding: 30px; ">
+            <p style="font-size: 40px; font-weight: bolder;">Do you have any question? Feel free to contact.</p>
+            <p style="font-size: larger; color: grey;">Bring your valuable desktop, laptop, Macbook, tab or gaming pc. We will happy to serve our best to you.</p>
+            <button style="background-color: black; color: white;">CONTACT WITH US</button>
+        </div>
+        
+<!-- division 9 -->
+        <div class="nine">
+            <div class="inner-nine1">
+                <h2 >ABOUT US</h2>
+                <P>Fixer Buddies offers professional laptop repair services at our retail locations throughout world. The high level of customer service has allowed to open multiple full-service repair centers.</P>
+            </div>
+            <div class="inner-nine1">
+                <h2>CONTACT US</h2>
+                <P>support-us@rgeeks.com</P>
+                <P>helpmenow@rgeeks.com</P>
+                <p>Road-2,3/A East Shibgonj</p>
+                <p>Sylhet-3100, Bangladesh</p>
+                <p>Office:  (+880) 0823 560 433</p>
+                <p>Cell:  (+880) 0723 161 343</p>
+            </div>
+        </div>
+    </div>
+    <footer style="font-weight: bolder; font-size: larger;">21ADR029 MONISHA K</footer>
+</body>
+</html>

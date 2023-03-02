@@ -1,0 +1,155 @@
+.head{
+    margin: 0;
+    padding: 80px 0 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: transparent;
+    background-image: url(https://www.insureon.com/-/jssmedia/blog/posts/2020/photo_technician-repairing-computer.jpg?h=370&iar=0&w=750&rev=256c85894eb9484791c011b975eb847f) ;
+    image-orientation: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px solid #FFF;
+    text-align: center;
+    font-weight: 700;
+    height: 200px;
+    
+}
+.container_1{
+    display: flex;
+    /* border: 2px solid black; */
+    height: 600px;
+    width: 60%;
+    margin-top: 50px;
+}
+.container_2{
+    display: flex;
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 60%;
+    margin-top: -500px;
+    margin-left: 550px;
+}
+.subcontainer{
+    /* border: 2px solid rgb(75, 75, 76); */
+    height: 300px;
+    width: 70%;
+    margin-top: 45px;
+    margin-left: 200px;
+    box-shadow: 5px 5px 5px rgb(73, 72, 70);
+    background-color: aliceblue;
+}
+.para{
+    color:rgb(17, 220, 220);
+    font-size: xx-large;
+    position:relative;
+    margin-top: 50px;
+    padding: 30px;
+}
+.container_3{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 700px;
+    width: 90%;
+    background-color: rgb(224, 220, 220);
+    margin-top: 250px;
+    margin-left: 90px;
+}
+.header_1{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.body_1{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    padding-left: 4px;
+
+
+}
+.footer_1{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items:center ;
+    justify-content: center;
+
+}
+
+.box_1{
+    border: 2px solid black;
+    height: 400px;
+    width: 24%;
+    margin-left: 7px;
+    background-image: url("https://media.istockphoto.com/id/166103292/photo/electronic-technician-holding-tweezers-and-assemblin-a-circuit-board.jpg?s=612x612&w=0&k=20&c=RMEUBForljOSxMEf6OpOatLnpuhDv7CqVxAvKs2a_wM=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box_1:hover{
+    background-size: 200%;
+}
+.box_2{
+    border: 2px solid black;
+    height: 400px;
+    width: 24%;
+    margin-left: 7px;
+    background-image: url("https://media.istockphoto.com/id/1066995748/photo/repair-of-computer-hard-drives.jpg?s=612x612&w=0&k=20&c=LxlSulxNxVR5aeYLGBoilDFF59jt355j2GkYr4MTQPU=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box_2:hover{
+    background-size: 200%;
+}
+.box_3{
+    border: 2px solid black;
+    height: 400px;
+    width: 24%;
+    margin-left: 7px;
+    background-image: url("https://media.istockphoto.com/id/489081568/photo/computer-repair.jpg?s=612x612&w=0&k=20&c=lDWP5Ny7br8H_96lKdqESNNAjeMLlI21zYBsREoZ6XY=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box_3:hover{
+    background-size: 200%;
+}
+.box_4{
+    border: 2px solid black;
+    height: 400px;
+    width: 24%;
+    margin-left: 7px;
+    background-image: url("https://media.istockphoto.com/id/1148195855/photo/male-it-technician-running-maintenance-programme-on-a-laptop-controls-operational-server-rack.jpg?s=612x612&w=0&k=20&c=CYHjd_McnZKJu8zrJqvKQUBkF_HUqfz2WlOYMwkm5bs=");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box_4:hover{
+    background-size: 250%;
+}
+.btn_1{
+    border-radius: 10px;
+    padding: 5px;
+    color: #FFCE54;
+    height: 40px;
+    font-weight: bolder;
+}
+.btn_1:hover{
+    background-color: rgb(16, 17, 16);
+}
+
+.container_4{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    margin-top: 40px;
+    background-color: cadetblue;
+    border: 4px double black;
+    align-items: center;
+}
